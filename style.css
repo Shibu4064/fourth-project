@@ -308,6 +308,10 @@ html, body{
   transition: all 0.3s ease;
 }
 
+#new a{
+  text-decoration: none;
+}
+
 .container .facebook i,
 .container .twitter i{
   padding-right: 12px;

@@ -8,12 +8,26 @@
   font-size: 500px;
   }
   .my-image{
-      background-image: url(bgimage3.jpg);
-      background-position: 30%;
+      background-image: url(rsz_bgimage3.jpg);
+      background-position: 45%;
   }
+
+
+  .carousel-caption{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+  }
+
+
+
   .custom-nav a button{
       width: 117px;
       text-align: center;
+      color: whitesmoke;
+  }
+  .toretto a button:hover{
+    color: red;
   }
   div.gallery {
     border: 1px solid #ccc;
@@ -35,6 +49,7 @@
   .new a{
     text-decoration: none;
   }
+
   form{
     background-image: url(beach.jpg);
     width: 100vh;
@@ -79,7 +94,8 @@
 }
 .copyright-container a:hover{
   color: tomato;
-}
+} 
+
 .search{
   width: 80%;
   position: relative;
@@ -144,6 +160,7 @@
 }
 .address-content a{
     color: white;
+    text-decoration: none;
 }
 .address-section{
     margin-top: -35px;
@@ -151,6 +168,69 @@
     position: relative;
     margin-bottom: 50px;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: #eee;
+}
+
+.container-fluid h2{
+  color: hotpink;
+  position: relative;
+  width: 23rem;
+}
+.container-fluid h2::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+  width: 67px;
+  height: 2px;
+  background-color: hotpink;
+}
+.accordion{
+  width: 100%;
+  padding: 0 5px;
+  border: 2px solid #6db5ff;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  height: 70px;
+}
+.accordion .icon{
+  margin: 0 10px 0 0;
+  width :30px;
+  height: 30px;
+  background:url(canvas.png)  no-repeat 8px 7px #6db5ff ; 
+  border-radius: 50%;
+  float: left;
+  transition: all .5s ease-in;
+  padding: 2px;
+}
+.accordion h5{
+  font-size: 22px;
+  margin: 0;
+  padding: 5px 0 0 0;
+  font-weight: normal;
+  color: #1f5c9a;
+}
+
+.panel{
+  padding: 0 15px;
+  border-left: 1px solid #6db5ff;
+  margin-left: 25px;
+  font-size: 14px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all .5s ease-in;
+
+}
+
 
   @media only screen and (max-width: 700px) {
     .responsive {
