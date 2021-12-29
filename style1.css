@@ -16,9 +16,7 @@
   color: black;
   font-weight: bold;
 }
-
-
-  .carousel-caption{
+.carousel-caption{
     position: absolute;
     top: 200px;
     left: 100px;

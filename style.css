@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-html,body{
+html,
+body {
   display: grid;
   height: 100vh;
   width: 100%;
@@ -14,31 +15,33 @@ html,body{
   background-image: url(SignWords.jpg);
   background-size: cover;
 }
- /* ::selection{
-  background:  #fa4299;
+#new a{
+  text-decoration: none;
+}
+/* ::selection { 
+  background: #14060d;
   color: #fff;
-}  */
-
-.wrapper{
+} */
+.wrapper {
   overflow: hidden;
   max-width: 390px;
   background: #fff;
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  box-shadow: 0px 15px 20px rgba(10, 10, 10, 1);
 }
-.wrapper .title-text{
+.wrapper .title-text {
   display: flex;
   width: 200%;
 }
-.wrapper .title{
+.wrapper .title {
   width: 50%;
   font-size: 35px;
   font-weight: 600;
   text-align: center;
-  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .slide-controls{
+.wrapper .slide-controls {
   position: relative;
   display: flex;
   height: 50px;
@@ -49,7 +52,7 @@ html,body{
   border: 1px solid lightgrey;
   border-radius: 5px;
 }
-.slide-controls .slide{
+.slide-controls .slide {
   height: 100%;
   width: 100%;
   color: #fff;
@@ -61,58 +64,58 @@ html,body{
   z-index: 1;
   transition: all 0.6s ease;
 }
-.slide-controls label.signup{
+.slide-controls label.signup {
   color: #000;
 }
-.slide-controls .slider-tab{
+.slide-controls .slider-tab {
   position: absolute;
   height: 100%;
   width: 50%;
   left: 0;
   z-index: 0;
   border-radius: 5px;
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
-  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  background: -webkit-linear-gradient(left, #0da3d1, aqua);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-input[type="radio"]{
+input[type="radio"] {
   display: none;
 }
-#signup:checked ~ .slider-tab{
+#signup:checked ~ .slider-tab {
   left: 50%;
 }
-#signup:checked ~ label.signup{
+#signup:checked ~ label.signup {
   color: #fff;
   cursor: default;
   user-select: none;
 }
-#signup:checked ~ label.login{
+#signup:checked ~ label.login {
   color: #000;
 }
-#login:checked ~ label.signup{
+#login:checked ~ label.signup {
   color: #000;
 }
-#login:checked ~ label.login{
+#login:checked ~ label.login {
   cursor: default;
   user-select: none;
 }
-.wrapper .form-container{
+.wrapper .form-container {
   width: 100%;
   overflow: hidden;
 }
-.form-container .form-inner{
+.form-container .form-inner {
   display: flex;
   width: 200%;
 }
-.form-container .form-inner form{
+.form-container .form-inner form {
   width: 50%;
-  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.form-inner form .field{
+.form-inner form .field {
   height: 50px;
   width: 100%;
   margin-top: 20px;
 }
-.form-inner form .field input{
+.form-inner form .field input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -123,54 +126,54 @@ input[type="radio"]{
   font-size: 17px;
   transition: all 0.3s ease;
 }
-.form-inner form .field input:focus{
-  border-color: #fc83bb;
+.form-inner form .field input:focus {
+  border-color: rgb(7, 133, 236);
   /* box-shadow: inset 0 0 3px #fb6aae; */
 }
-.form-inner form .field input::placeholder{
+.form-inner form .field input::placeholder {
   color: #999;
   transition: all 0.3s ease;
 }
-form .field input:focus::placeholder{
+form .field input:focus::placeholder {
   color: #b3b3b3;
 }
-.form-inner form .pass-link{
+.form-inner form .pass-link {
   margin-top: 5px;
 }
-.form-inner form .signup-link{
+.form-inner form .signup-link {
   text-align: center;
   margin-top: 30px;
 }
 .form-inner form .pass-link a,
-.form-inner form .signup-link a{
-  color: #fa4299;
+.form-inner form .signup-link a {
+  color: #0cc5f3;
   text-decoration: none;
 }
 .form-inner form .pass-link a:hover,
-.form-inner form .signup-link a:hover{
- /* text-decoration: underline; */
-  color: #99004d;
+.form-inner form .signup-link a:hover {
+  /* text-decoration: underline; */
+  color: #1142e0;
 }
-form .btn{
+form .btn {
   height: 50px;
   width: 100%;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
 }
-form .btn .btn-layer{
+form .btn .btn-layer {
   height: 100%;
   width: 300%;
   position: absolute;
   left: -100%;
-  background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(right, #0da3d1, aqua, #0da3d1, aqua);
   border-radius: 5px;
-  transition: all 0.4s ease;;
+  transition: all 0.4s ease;
 }
-form .btn:hover .btn-layer{
+form .btn:hover .btn-layer {
   left: 0;
 }
-form .btn input[type="submit"]{
+form .btn input[type="submit"] {
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -184,159 +187,3 @@ form .btn input[type="submit"]{
   font-weight: 500;
   cursor: pointer;
 }
-#new a{
-  text-decoration: none;
-}
-
-
-/*form6 starts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-}
-html, body{
-  display: grid;
-  height: 100vh;
-  width: 100%;
-  place-items: center;
-  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
-}
-::selection{
-  background: #ff80bf;
-
-}
-.container{
-  background: #fff;
-  max-width: 350px;
-  width: 100%;
-  padding: 25px 30px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
-}
-.container form .title{
-  font-size: 30px;
-  font-weight: 600;
-  margin: 20px 0 10px 0;
-  position: relative;
-}
-.container form .title:before{
-  content: '';
-  position: absolute;
-  height: 4px;
-  width: 33px;
-  left: 0px;
-  bottom: 3px;
-  border-radius: 5px;
-  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
-}
-.container form .input-box{
-  width: 100%;
-  height: 45px;
-  margin-top: 25px;
-  position: relative;
-}
-.container form .input-box input{
-  width: 100%;
-  height: 100%;
-  outline: none;
-  font-size: 16px;
-  border: none;
-}
-.container form .underline::before{
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background: #ccc;
-  left: 0;
-  bottom: 0;
-}
-.container form .underline::after{
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
-  left: 0;
-  bottom: 0;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: all 0.3s ease;
-}
-.container form .input-box input:focus ~ .underline::after,
-.container form .input-box input:valid ~ .underline::after{
-  transform: scaleX(1);
-  transform-origin: left;
-}
-.container form .button{
-  margin: 40px 0 20px 0;
-}
-.input-box .pass-link{
-  margin-top: 5px;
-}
-.input-box .pass-link a{
-  text-decoration: none;
-}
-.input-box .pass-link a:hover{
-  color: #99004d;
-}
-.container .input-box input[type="submit"]{
-  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
-  font-size: 17px;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.container .input-box input[type="submit"]:hover{
-  letter-spacing: 1px;
-  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
-}
-.container .option{
-  font-size: 14px;
-  text-align: center;
-}
-.container .facebook a,
-.container .twitter a{
-  display: block;
-  height: 45px;
-  width: 100%;
-  font-size: 15px;
-  text-decoration: none;
-  padding-left: 20px;
-  line-height: 45px;
-  color: #fff;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-#new a{
-  text-decoration: none;
-}
-
-.container .facebook i,
-.container .twitter i{
-  padding-right: 12px;
-  font-size: 20px;
-}
-.container .twitter a{
-  background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
-  margin: 20px 0 15px 0;
-}
-.container .twitter a:hover{
-  background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
-  margin: 20px 0 15px 0;
-}
-.container .facebook a{
-  background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
-  margin: 20px 0 50px 0;
-}
-.container .facebook a:hover{
-  background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
-  margin: 20px 0 50px 0;
-}
-*/

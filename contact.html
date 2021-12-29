@@ -17,12 +17,13 @@
              <a href="Dictionary.html">  <img src="rsz_rsz_dic2.png" alt="" class="img-fluid"> </a>
             </div>
             <div class="col-md-8 text-center pt-3 pt-md-0 pt-lg-5">
-              <nav class="py-2 custom-nav">
+              <nav class="py-2 custom-nav myDIV">
               <a href="Dictionary.html"><button class="btn btn-outline-info me-3 my-2 my-lg-0 hms">Home</button></a>
-              <a href="contact.html"><button class="btn btn-outline-info me-3 my-2 my-lg-0 hms">Contact</button></a>
+              <a href="contact.html"><button class="btn btn-outline-info btn active me-3 my-2 my-lg-0 hms">Contact</button></a>
             <!-- <a href="Form6.html"><button class="btn btn-outline-info me-3 my-2 my-lg-0">Sign In</button></a>  -->  
               <a href="Form3.html"><button class="btn btn-outline-info me-3 my-2 my-lg-0 hms">Join now</button></a>
               <a href="leaderboard.html"><button class="btn btn-outline-info me-3 my-2 my-lg-0 hms">Leaderboard</button></a>
+              <a href="Games.html"><button class="btn btn-outline-info me-3 my-2 my-lg-0 hms">Play Games </button></a>
               </nav>
               <div class="search">
                 <input type="text" placeholder="What are you looking for?">
@@ -93,15 +94,6 @@
        </div>
   <!-- contact form ends -->
 
-
-  
-
-  
-
-
-
-  
-  
 <div class="clearfix"></div> 
 
  <section>
@@ -137,7 +129,9 @@
   </div>
   </section>
 
- <section>
+ 
+ 
+  <section>
   <div class="container-fluid copyright-container">
     <div class="container">
       <div class="row">
@@ -153,6 +147,18 @@
  </section>
   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementByClass("myDIV");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script>
 </body>
 </html>
 
