@@ -1,7 +1,7 @@
 body{
     font-family:Tahoma, Geneva,sans-serif;
     color: #fff;
-    background: url(picture/image-1.jpg);
+    background: url(image-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -16,7 +16,7 @@ body{
 a{
     color: yellow;
     text-decoration:blink;
-    font-family: Tahoma,Geneva,sans-seif;
+    font-family: Tahoma,Geneva,sans-serif;
     margin-left: 35px;
 }
 h2{

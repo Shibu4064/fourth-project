@@ -50,6 +50,9 @@
  .new a{
     text-decoration: none;
   }
+  .new a:hover{
+    color: tomato;
+  }
  form{
     background-image: url(beach.jpg);
     width: 100vh;
